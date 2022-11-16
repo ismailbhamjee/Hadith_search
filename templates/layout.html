@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
+
+        <style>
+         #blueDIV {
+         margin:auto;
+         margin-top:100px;
+        width:400px;
+        height:250px;
+        padding:10px;
+        background-color:rgb(255, 255, 255);
+        border-radius: 10px;
+        box-shadow: rgba(34, 34, 34, 0.25) 0px 50px 100px -20px, 
+                    rgba(246, 127, 127, 0.3) 0px 30px 60px -30px,
+                    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px;}
+
+
+
+                    body {margin: 80px; align-items: center;}     
+
+                    .box {
+                        background-color: rgb(145, 145, 145);
+                        color: #fff;
+                        border-radius: 5px;
+                        padding: 50px;
+                        font-size: 150%;
+                        box-shadow: rgba(34, 34, 34, 0.25) 0px 50px 100px -20px, 
+                                 rgba(246, 127, 127, 0.3) 0px 30px 60px -30px,
+                                 rgba(10, 37, 64, 0.35) 0px -2px 6px 0px;
+                        
+                            }
+
+
+                    .box:nth-child(even) {
+                        background-color: #ccc;
+                        color: #000;
+                            }
+
+                            .wrapper {
+                                    width: 500px;
+                                    display: grid;
+                                    grid-gap: 20px;
+                                    grid-template-columns: repeat(6, 300px);
+                                    grid-template-rows: 300px 300px 300px;
+                                    grid-auto-flow: column;
+                                        }
+
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+            <div class="box">11</div>
+            <div class="box">12</div>
+          </div>
+
+
+    </body>
+</html>
